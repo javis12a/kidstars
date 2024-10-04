@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Tool</title>
+    <title>Công cụ Điểm danh</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Login Section -->
+    <!-- Phần đăng nhập -->
     <div id="login-section">
-        <h2>Login</h2>
+        <h2>Đăng nhập</h2>
         <form id="login-form">
-            <label for="username">Username:</label>
+            <label for="username">Tài khoản:</label>
             <input type="text" id="username" required>
             <br>
-            <label for="password">Password:</label>
+            <label for="password">Mật khẩu:</label>
             <input type="password" id="password" required>
             <br>
-            <button type="submit">Login</button>
+            <button type="submit">Đăng nhập</button>
         </form>
     </div>
 
-    <!-- Attendance Section -->
+    <!-- Phần điểm danh -->
     <div id="attendance-section" style="display: none;">
-        <h2>Attendance</h2>
+        <h2>Điểm danh học sinh</h2>
         <form id="attendance-form">
-            <label for="student-name">Student Name:</label>
+            <label for="student-name">Tên học sinh:</label>
             <input type="text" id="student-name" required>
-            <button type="submit">Save Attendance</button>
+            <button type="submit">Lưu điểm danh</button>
         </form>
 
-        <h3>Today's Attendance</h3>
+        <h3>Danh sách điểm danh hôm nay</h3>
         <ul id="attendance-history"></ul>
 
-        <h3>Search Attendance</h3>
-        <label for="start-date">Start Date:</label>
+        <h3>Tìm kiếm điểm danh</h3>
+        <label for="start-date">Từ ngày:</label>
         <input type="date" id="start-date">
-        <label for="end-date">End Date:</label>
+        <label for="end-date">Đến ngày:</label>
         <input type="date" id="end-date">
-        <button id="search-attendance">Search</button>
+        <button id="search-attendance">Tìm kiếm</button>
 
-        <h3>Search Results</h3>
+        <h3>Kết quả tìm kiếm</h3>
         <ul id="search-results"></ul>
     </div>
 
