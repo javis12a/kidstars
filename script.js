@@ -26,7 +26,7 @@ attendanceForm.addEventListener('submit', function(e) {
     const studentName = document.getElementById('student-name').value;
 
     // Gửi dữ liệu học sinh đến Google Apps Script
-    fetch('https://script.google.com/macros/s/AKfycbzVUTqIpUo_u9Bheq62Hlod2IEpoad7wKKZS-vB5rxhTUvqb9b5FUKQ05S6Hjc45QNPSA/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbw_zHakO4Xb-4g_sXBS15lbfsly90DpBW-xtmWwKKV5t0k8cQXaZ27Feu-k5jN7-7SY/exec', {
         method: 'POST',
         body: JSON.stringify({studentName: studentName}),
         headers: {
@@ -54,7 +54,7 @@ searchButton.addEventListener('click', function() {
     const endDate = document.getElementById('end-date').value;
 
     // Gửi yêu cầu tìm kiếm lịch sử điểm danh theo ngày
-    fetch('https://script.google.com/macros/s/AKfycbzVUTqIpUo_u9Bheq62Hlod2IEpoad7wKKZS-vB5rxhTUvqb9b5FUKQ05S6Hjc45QNPSA/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbw_zHakO4Xb-4g_sXBS15lbfsly90DpBW-xtmWwKKV5t0k8cQXaZ27Feu-k5jN7-7SY/exec', {
         method: 'POST',
         body: JSON.stringify({startDate: startDate, endDate: endDate}),
         headers: {
