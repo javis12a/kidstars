@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Section -->
+    <div id="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Attendance Section -->
+    <div id="attendance-section" style="display: none;">
+        <h2>Attendance</h2>
+        <form id="attendance-form">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" required>
+            <button type="submit">Save Attendance</button>
+        </form>
+
+        <h3>Today's Attendance</h3>
+        <ul id="attendance-history"></ul>
+
+        <h3>Search Attendance</h3>
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date">
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date">
+        <button id="search-attendance">Search</button>
+
+        <h3>Search Results</h3>
+        <ul id="search-results"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
